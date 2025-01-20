@@ -487,7 +487,7 @@ public class GitHubClient {
    */
   CompletableFuture<Response> request(final String path) {
     final Request request = requestBuilder(path).build();
-    log.debug("Making request to {}", request.url().toString());
+    log.debug("Making request to {}", request.url());
     return call(request);
   }
 
@@ -502,7 +502,7 @@ public class GitHubClient {
     final Request.Builder builder = requestBuilder(path);
     extraHeaders.forEach(builder::addHeader);
     final Request request = builder.build();
-    log.debug("Making request to {}", request.url().toString());
+    log.debug("Making request to {}", request.url());
     return call(request);
   }
 
