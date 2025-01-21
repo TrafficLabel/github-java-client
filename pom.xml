@@ -41,6 +41,7 @@
         <immutables.version>2.9.3</immutables.version>
         <objenesis.version>3.3</objenesis.version>
         <opencensus.version>0.31.1</opencensus.version>
+        <okhttp.version>4.12.0</okhttp.version>
     </properties>
 
     <dependencyManagement>
@@ -182,6 +183,11 @@
             <artifactId>mockwebserver</artifactId>
             <version>${okhttp.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>1.9.10</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>

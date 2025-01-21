@@ -41,7 +41,7 @@ public interface Issue extends CloseTracking {
 
   /** ID. */
   @Nullable
-  Integer id();
+  Long id();
 
   /** URL. */
   @Nullable
@@ -69,7 +69,7 @@ public interface Issue extends CloseTracking {
 
   /** Number. */
   @Nullable
-  Integer number();
+  Long number();
 
   /** Indicates the state of the issues to return. Can be either open, closed, or all. */
   @Nullable
